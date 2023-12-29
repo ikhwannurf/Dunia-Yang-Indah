@@ -1,0 +1,161 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(purple, violet,red);          
+
+}
+
+.navbar-container {
+    background-color: red;
+    height: 80px;
+    background: radial-gradient(purple, violet,red);           
+
+}
+
+.divparag {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.divpar1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: x-large;
+}
+.ul-navbar {
+    justify-content: center;
+    height: 80px;
+    display: flex ;
+    background: linear-gradient(to right, red, blue);
+      
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 20px;
+    font-size: x-large;
+    margin: 10px;
+    color: white
+}
+
+.paragraf {
+
+    background: radial-gradient(purple, violet,red);     
+    font-style: initial;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.div-img {
+    background: radial-gradient(purple, violet,blue);       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5); 
+      
+}
+
+.div-imgs {
+    width: 50%;
+    height: 30%;
+}
+
+.Alamat {
+    margin-top: 20px;
+}
+.sosmed {
+    margin-bottom: 10px;
+}
+
+
+.sosmed1 {
+
+    margin-top: 100px;
+    color: white;
+}
+
+.div-footer {
+    background: linear-gradient(to right, red, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-footer {
+font-size: 25px ;
+font-style: oblique;
+color:white;
+
+}
+
+.h2-footer {
+    font-size: 25px ;
+    font-style: oblique;
+    color: red;
+
+}
+
+.div-footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .div-footer3 {
+        background-color: darkblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .h3-footer {
+    font-size: 25px ;
+    font-style: oblique;
+    color:white;}
+
+    .div-footer4 {
+        background: radial-gradient(purple, violet,red);     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h4-footer {
+    font-size: 25px ;
+    font-style: oblique;
+    color: red;}
+
+    .div-img2 {
+        background: radial-gradient(purple, violet,red);           
+        height: 15%;
+        width: 25%;
+    }
+    
+    .div-imgs2 {
+        width: 30%;
+        height: 30%;}
+
+.teks {
+    color: white;
+}
+
+.teks2 {
+    color: aqua;
+}
+.li-navbar {
+    color: white;
+}

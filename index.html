@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body * {
+            animation: bounceAnimation 1s ease 1;
+        }
+
+        @keyframes bounceAnimation {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .div-footer h1, .divparag, .div-footer3, .div-footer4, .sosmed1, .teks, .Alamat {
+            animation: slideInRight 1s ease 1;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bar Navigasi-->
+    <div class="navbar-container">
+        <ul class="ul-navbar">
+            <li class="li-navbar" onclick="scrollToSection('home')">Home</li>
+            <li class="li-navbar" onclick="openLink('https://ikhwannurf.github.io/fisikakuantum/')">About</li>
+            <li class="li-navbar"><a href="https://www.instagram.com/_wan_______1/?hl=en" target="_blank" class="teks2">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Bar Navigasi Selesai-->
+
+    <!-- Konten-->
+    <div class="div-img" id="home">
+        <img src="fisika kuantum.jpeg" class="div-imgs">
+    </div>
+    <!-- Konten Selesai -->
+
+    <!-- Footer -->
+    <div class="div-footer">
+        <h1 id="welcome-text">Selamat Datang Dihalaman Kelas Bimbel Fisika Kuantum </h1>
+    </div>
+
+    <div class="div-footer">
+        <h3 class="h1-footer" id="about" onclick="openLink('https://ikhwannurf.github.io/fisikakuantum/')"></h3>
+    </div>
+
+    <div class="divparag">
+        <p class="divparag"> Visi Dan Misi : </p>
+
+        <p class="divpar1">1."Terobosan Dan Pemahaman : Jelajahi Keajaiban Fisika Kuantum Bersama Kami!"</p>
+        <img src="fisika kuantum2.jpeg" class="div-img2">
+        <p class="divpar1">2."Berpikir Kritis : Bimbel Fisika Kuantum untuk Membangun Masa Depan Anda!"</p>
+        <img src="fisika kuantum3.jpeg" class="div-img2">
+        <p class="divpar1">3."Sains Fisika Ajaib di Ujung Jari : Temukan Rahasia Fisika Kuantum bersama Tim Kami!"</p>
+        <img src="fisika kuantum 4.jpeg" class="div-img2">
+        <p class="divpar1">4."Belajar dengan Kecepatan Cahaya : Program Fisika Kuantum yang Menantang Dengan Kecepatan
+            Cahaya !"</p>
+        <img src="fisika kuantum5.jpeg" class="div-img2">
+        <p class="divpar1">5."Mengubah Keterbatasan menjadi Keunggulan : Sukses dengan Fisika Kuantum!"</p>
+        <img src="fisika kuantum6.jpeg" class="div-img2">
+    </div>
+
+    <div class="div-footer3">
+        <h3 class="h3-footer">Terimakasih Telah Berkunjung,Kami Sangat Menantikan Keanggotaan Anda</h3>
+    </div>
+
+    <div class="div-footer4">
+        <h4 class="h4-footer">
+            <a href="https://wa.me/+62895322692273" target="_blank" class="teks2">Klik Whatsapp link ini,Untuk
+                pendaftaran</a>
+        </h4>
+    </div>
+    <div class="sosmed1">
+        <p class="sosmed">
+            Contact
+        </p>
+    </div>
+    <div>
+        <h5>
+            <a href="https://www.instagram.com/_wan_______1/?hl=en" target="_blank" class="teks2">Instagram</a>
+        </h5>
+    </div>
+    <p class="teks">ikhwannurfaqih007@gmail.com</p>
+    <p class="Alamat">
+        <div>
+            <p class="teks">
+                location
+            </p>
+        </div>
+    </p>
+    <p class="teks">JL Mayzen Lr Lebak Jaya III,Sei Selayur,Kalidoni,Palembang,Sumatera Selatan.</p>
+    <p class="Alamat">
+        <div>
+            <p class="teks">
+                more about....
+            </p>
+        </div>
+    </p>
+    <p><a href="lorem" target="_blank" class="teks2">Baca Selengkapnya.............</a></p>
+    <!-- Footer end -->
+
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mengubah teks pada elemen dengan ID "welcome-text"
+            document.getElementById('welcome-text').innerText = "Selamat Datang Dihalaman Kelas Bimbel Fisika Kuantum";
+        });
+
+        function openLink(link) {
+            window.open(link, '_blank');
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop - document.querySelector('.navbar-container').offsetHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        // Hapus kelas animasi setelah animasi pertama selesai
+        document.addEventListener('animationend', function (e) {
+            if (e.animationName === 'slideInRight') {
+                document.querySelectorAll('.animate-once').forEach(function (el) {
+                    el.classList.remove('animate-once');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
